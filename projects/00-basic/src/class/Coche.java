@@ -1,23 +1,17 @@
+
 public class Coche {
-    String marca = "Toyota";
-    String modelo = "Corolla";
-    String color = "Rojo";
-    int ano = 2020;
-    double precio = 20000;
+    String marca;
+    int ano;
+    double precio;
 
-    void conducir() {
-        System.out.println("El coche está conduciendo.");
+    Coche(String marca, int ano, double precio) {
+        this.marca = marca;
+        this.ano = ano;
+        this.precio = precio;
+        System.out.println("Se ha creado un nuevo coche.");
     }
 
-    void frenar() {
-        System.out.println("El coche está frenando.");
-    }
-
-    void mostrarInformacion() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Modelo: " + modelo);
-        System.out.println("Color: " + color);
-        System.out.println("Año: " + ano);
-        System.out.println("Precio: $" + precio);
+    void manejar() {
+        System.out.println("El coche " + this.marca + " está siendo manejado.");
     }
 }
