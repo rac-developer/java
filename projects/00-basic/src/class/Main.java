@@ -1,19 +1,24 @@
 
 public class Main {
     public static void main(String[] args) {
-        Pizza pizza = new Pizza("pan de pizza", "salsa de tomate", "queso mozzarella", "pepperoni");
+        // int[] numeros = new int[3];
+        // char[] caracteres = new char[4];
+        // String[] cadenas = new String[5];
 
-        System.out.println("Pan: " + pizza.pan);
-        System.out.println("Salsa: " + pizza.salsa);
-        System.out.println("Queso: " + pizza.queso);
-        System.out.println("Topping: " + pizza.topping);
-        
-        System.out.println();
+        Comida[] refrigerador = new Comida[3];
 
-        Pizza pizza2 = new Pizza("pan de pizza", "salsa de tomate", "queso mozzarella");
+        Comida comida1 = new Comida("Pizza");
+        Comida comida2 = new Comida("Hamburguesa");
+        Comida comida3 = new Comida("Sushi");
 
-        System.out.println("Pan: " + pizza2.pan);
-        System.out.println("Salsa: " + pizza2.salsa);
-        System.out.println("Queso: " + pizza2.queso);
+        // refrigerador[0] = comida1;
+        // refrigerador[1] = comida2;
+        // refrigerador[2] = comida3;
+
+        Comida[] refrigerador2 = {comida1, comida2, comida3};
+
+        System.out.println(refrigerador[0].nombre);
+        System.out.println(refrigerador[1].nombre);
+        System.out.println(refrigerador[2].nombre);
     }
 }
